@@ -4,72 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "master-possum.rooster465.autos",
+      "server": "52.51.176.50",
       "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "master-possum.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "54.72.130.222",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "adapting-basilisk.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-      "server": "loved-shark.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "loved-shark.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe",
-      "server": "3.253.106.233",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "loved-shark.rooster465.autos",
-        "insecure": false
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 04 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
